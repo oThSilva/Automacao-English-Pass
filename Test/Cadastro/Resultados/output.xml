@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-11-06T15:56:24.107417" rpa="false" schemaversion="5">
+<suite id="s1" name="TC01" source="C:\Projetos Th\Projeto automação\English Pass\Test\Cadastro\TC01.robot">
+<test id="s1-t1" name="TC01 - Realizando cadastro no site English Pass" line="6">
+<kw name="Dado que acesso o site English pass para cadastro" owner="cadastro_steps">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-06T15:56:24.504261" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-06T15:56:24.504261" elapsed="5.682813"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-06T15:56:30.187074" elapsed="0.050453"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-06T15:56:30.237527" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<arg>${button_init}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T15:56:30.237527" elapsed="0.194956"/>
+</kw>
+<status status="PASS" start="2024-11-06T15:56:24.504261" elapsed="5.929851"/>
+</kw>
+<kw name="E realizo o cadastro" owner="cadastro_steps">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-06T15:56:30.436840" level="INFO">Typing text 'Thiago' into text field 'id:signup-personal-data-firstName'.</msg>
+<arg>${input_nome}</arg>
+<arg>${primeiro_nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T15:56:30.436840" elapsed="0.289473"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-06T15:56:30.727320" level="INFO">Typing text 'Silva' into text field 'id:signup-personal-data-lastName'.</msg>
+<arg>${input_sobrenome}</arg>
+<arg>${sobrenome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-06T15:56:30.726313" elapsed="0.158372"/>
+</kw>
+<status status="PASS" start="2024-11-06T15:56:30.436077" elapsed="0.448608"/>
+</kw>
+<status status="PASS" start="2024-11-06T15:56:24.504261" elapsed="6.380424"/>
+</test>
+<status status="PASS" start="2024-11-06T15:56:24.107417" elapsed="6.777268"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
