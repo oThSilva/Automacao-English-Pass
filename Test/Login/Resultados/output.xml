@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-11-12T16:40:00.543210" rpa="false" schemaversion="5">
+<suite id="s1" name="TC01" source="C:\Projetos Th\Projeto automação\English Pass\Test\Login\TC01.robot">
+<test id="s1-t1" name="TC01 - Realizando o login" line="7">
+<kw name="Dado que acesso o site English pass para login" owner="login_steps">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-12T16:40:01.136651" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/'.</msg>
+<arg>${url_login}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-12T16:40:01.134806" elapsed="7.386897"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-12T16:40:08.521703" elapsed="0.096142"/>
+</kw>
+<status status="PASS" start="2024-11-12T16:40:01.124620" elapsed="7.493225"/>
+</kw>
+<kw name="E faço o login" owner="login_steps">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T16:40:08.619274" level="INFO">Typing text 'testedeemail3@hotmail.com' into text field '//input[@id="user_login" and @name="log"]'.</msg>
+<arg>${input_login}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T16:40:08.617845" elapsed="0.604023"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-12T16:40:09.222411" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="user_pass" and @name="pwd"]'.</msg>
+<arg>${input_password}</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T16:40:09.222411" elapsed="0.223998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-12T16:40:09.447943" level="INFO">Clicking element '//input[@id="wp-submit" and @name="wp-submit"]'.</msg>
+<arg>${input_sing_in}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-12T16:40:09.447943" elapsed="2.703781"/>
+</kw>
+<status status="PASS" start="2024-11-12T16:40:08.617845" elapsed="3.533879"/>
+</kw>
+<kw name="Pause Execution" owner="Dialogs">
+<arg>Verificar navegador</arg>
+<doc>Pauses execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" start="2024-11-12T16:40:12.151724" elapsed="1.604637"/>
+</kw>
+<status status="PASS" start="2024-11-12T16:40:01.118077" elapsed="12.662339"/>
+</test>
+<status status="PASS" start="2024-11-12T16:40:00.546316" elapsed="13.237730"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

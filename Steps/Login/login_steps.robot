@@ -1,7 +1,7 @@
 *** Settings ***
 
-Resource    ../../Resource/settings.resource
-Resource    ../../Elements/main_elements.resource
+Resource    ../../Resource/settings.robot
+Resource    ../../Elements/main_elements.robot
 
 *** Keywords ***
 

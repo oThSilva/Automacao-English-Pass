@@ -1,0 +1,28 @@
+Critérios de aceite:
+
+Nome: 
+    - Teve ter mo minimo 4 caracteres
+Sobrenome:
+    - Teve ter mo minimo 4 caracteres
+Data de nasc:
+    - O ano deve ser menor ou igual a 2014 
+    - O mes deve ser menor ou igual a 11 
+    - O dia deve ser menor ou igual a 11 
+CPF:
+    - Deve conter somente numeros 
+    - Deve ser um CPF válido
+Email:
+    - Deve ser um email válido existente
+Senha: 
+    - Deve ter pelo menos 5 caracteres 
+Confirmação email:
+    - Deve ser igual ao compo "Email"
+Confirmação senha: 
+    - Deve ser igual ao compo "Senha"
+
+Botão "Termos de Uso e Politica de Privacidade":
+    - Deve ser selecionado antes de prosseguir
+
+CEP:
+    - Deve conter somente números 
+    - Deve ser válido

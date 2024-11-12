@@ -12,13 +12,12 @@ ${browser}        gc
 
 ${primeiro_nome}    Thiago
 ${sobrenome}        Silva
-${data_nasc}        24022000
-${cpf}              76958465032
-${email}            thipere.silva@hotmail.com
+${data_nasc}        24022001
+${cpf}              99440912278
+${email}            testedeemail3@hotmail.com
 ${senha}            Senha1234@ 
 ${cep}              68903615
-${numero}           1
+${numero}           3
     
 
        
-# 15716884806
