@@ -1,22 +1,47 @@
 Critérios de aceite:
 
 Nome: 
-    - Teve ter mo minimo 4 caracteres
+    - Deve ter mo minimo 4 caracteres
+    Ex:
+    - Nome válido: Thiago
+    - Nome inválido: thx
+
 Sobrenome:
-    - Teve ter mo minimo 4 caracteres
+    - Deve ter mo minimo 4 caracteres
+    Ex:
+    - Sobrenome válido: Silva
+    - Sobrenome inválido: thx
+    
 Data de nasc:
     - O ano deve ser menor ou igual a 2014 
     - O mes deve ser menor ou igual a 11 
-    - O dia deve ser menor ou igual a 11 
+    - O dia deve ser menor ou igual a 11
+    Ex:
+    - Data de nascimento válida: 24022001
+    - Data de nascimento inválida: 31122014
+
 CPF:
     - Deve conter somente numeros 
     - Deve ser um CPF válido
-Email:
-    - Deve ser um email válido existente
+    Ex:
+    - CPF válido: 90731530691
+    - CPF inválido: 45032012066
+    
+    Email:
+        - Deve ser um email válido existente
+        Ex:
+        - Email válido: thipereira.isilva@gmail.com
+        - Email inválido: thipereira.selva@gmail
+        
 Senha: 
     - Deve ter pelo menos 5 caracteres 
+        Ex:
+        - Senha válida: Senha1234@ 
+        - Senha inválida: 1324
+
 Confirmação email:
     - Deve ser igual ao compo "Email"
+
 Confirmação senha: 
     - Deve ser igual ao compo "Senha"
 
@@ -26,3 +51,7 @@ Botão "Termos de Uso e Politica de Privacidade":
 CEP:
     - Deve conter somente números 
     - Deve ser válido
+    Ex:
+    - CEP válido: 68903615
+    - CEP inválido: 1702307
+

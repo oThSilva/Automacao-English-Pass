@@ -11,8 +11,14 @@ Dado que acesso o site English pass para login
     ...    ${url_login}
     ...    ${browser}
     Maximize Browser Window
-E faço o login
+Quando eu realizo o login com esse usuário cadastrado 
     Input Text       ${input_login}       ${email}
     Input Text       ${input_password}    ${senha}
     Click Element    ${input_sing_in}
-    
+
+Então o login deve ser realizado com sucesso
+    Wait Until Element Is Visible    ${a_estudar}
+
+E faço o logout
+    Wait Until Element Is Visible    ${a_logout}
+    Click Element                    ${a_logout}

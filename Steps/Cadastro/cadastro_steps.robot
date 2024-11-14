@@ -21,12 +21,11 @@ Quando eu preencho todos os campos corretamente
     Input Text                       ${input_senha_confirm}    ${senha}
 
     # Botões
-    # Wait Until Element Is Visible    ${button_proeficiencia}
-    # Scroll Element Into View         ${button_proeficiencia}                        
+    Scroll Element Into View         ${button_proeficiencia}                        
+    Wait Until Element Is Visible    ${button_proeficiencia}
     Click Element                    ${button_proeficiencia}
     Click Element                    ${proeficiencia_intermediate} 
     Click Element                    ${button_termos}
-    Pause Execution    Verificar campos
     Click Element                    ${button_proximo}
     
 

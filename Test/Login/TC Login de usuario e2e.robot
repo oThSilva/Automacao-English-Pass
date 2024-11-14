@@ -2,10 +2,13 @@
 
 Resource    ../../Steps/main_steps.robot
 Library    Dialogs
+Test Teardown    Close Browser
 
 *** Test Cases ***
-TC01 - Realizando o login 
+Cenario 15
+    [Documentation]    Realizando o login e logout
     Dado que acesso o site English pass para login
-    E faço o login
-    
-    Pause Execution    Verificar navegador
+    Quando eu realizo o login com esse usuário cadastrado 
+    Então o login deve ser realizado com sucesso
+    E faço o logout
+
