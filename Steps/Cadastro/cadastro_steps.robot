@@ -1,23 +1,16 @@
 *** Settings ***
+
 Resource    ../../Resource/settings.robot
 Resource    ../../Elements/main_elements.robot
+Resource    ../../Resource/data.robot
 
 Library    Dialogs
 
 *** Keywords ***
-# Suite Setup
-Dado que acesso o site English pass para cadastro
-    Acessar Site
-Acessar Site    
-    Open Browser
-    ...    ${url}
-    ...    ${browser}
-    Maximize Browser Window
-    Click Button   
-    ...    ${button_init}
+
 
     # Dados de teste
-Quando realizo o cadastro
+Quando eu preencho todos os campos corretamente
     Input Text                       ${input_nome}             ${primeiro_nome}
     Input Text                       ${input_sobrenome}        ${sobrenome}
     Input Text                       ${input_data_nasc}        ${data_nasc}
@@ -41,10 +34,11 @@ Quando realizo o cadastro
     Input Text                       ${input_CEP}              ${cep}
     Input Text                       ${input_numero}           ${numero} 
     Sleep    4s
-
+E clico no botão "Fazer inscrição"
     # Botões
-    Click Element                    ${button_next}
+    Click Element                    ${button_proximo_tela2}
     Sleep    4s
+Então o usuário deve ser cadastrado com sucesso
     Element Should Be Visible        ${tela_de_verificao}
 
 

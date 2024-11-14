@@ -2,6 +2,7 @@
 
 Resource    ../../Resource/settings.robot
 Resource    ../../Elements/main_elements.robot
+Resource    ../../Resource/data.robot
 
 *** Keywords ***
 

@@ -21,6 +21,6 @@ ${input_CEP}                    //input[@id="signup-address-cep"]
 ${input_numero}                 //input[@id="signup-address-number"]
 
 # Botões
-${button_next}                  //button[@id="signup_submit_button_3"]
+${button_proximo_tela2}         //button[@id="signup_submit_button_3"]
+${tela_de_verificao}            //button[@id="wide_window_button"]
 
-${tela_de_verificao}           //button[@id="wide_window_button"]
