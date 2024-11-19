@@ -6,9 +6,14 @@ Este repositório contém um conjunto de testes automatizados utilizando o Robot
 
 A estrutura do projeto segue o padrão Page Object Model (POM), promovendo reutilização dos componentes de teste. O plano de teste, escrito em Gherkin/BDD inclui todos os cenários e casos detalhados. [Plano de teste](https://1drv.ms/x/c/728b311c8fe7522c/EZ3hlOIga_ROszVdQXb30aEBNPlX8-Gaa7MvDcjgq4QX1Q?e=R9sIl0).
 
+<img src="Arquitetura projeto automação.png" alt="Arquitetura do projeto" width="600">
 
+([Relatório](Results\log.html)) e ([registro](Results\report.html)) dos testes. 
 
-!(C://Projetos Th//Projeto automação//English Pass//Arquitetura projeto automação.png) 
-C:\Projetos Th\Projeto automação\English Pass\Arquitetura projeto automação.png
+## Próximos passos
+
+- Automatizar a geração do documento de evidências para cada execução dos casos de teste.
+- Refatorar o projeto para melhorar a organização e estrutura.
+
 
 
