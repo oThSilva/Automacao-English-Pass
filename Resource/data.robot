@@ -1,11 +1,11 @@
 *** Variables ***
-#Dados de teste "cadastro de usuário e2e"
+#Dados de teste "cadastro de usuário e2e" e "TC Login de usuario e2e"
 
 ${primeiro_nome}    Thiago
 ${sobrenome}        Silva
 ${data_nasc}        24022001
-${cpf}              21012053008
-${email}            thipereira.souza@yahoo.com
+${cpf}              05329494044
+${email}            thipereira.santos@gmail.com
 ${senha}            Senha1234@ 
 ${cep}              68903615
 ${numero}           3
@@ -15,7 +15,7 @@ ${numero}           3
 ${nome_sobrenome_invalido}    thx
 ${data_nasc_invalida}         31122014
 ${cpf_invalido}               45032012066
-${cpf_repetido}               90731530691
+${cpf_repetido}               21012053008
 ${email_invalido}             thipereira.selva@gmail
 ${email_diferente}            emaildeteste@hotmail.com
 ${email_repetido}             thipereira.isilva@gmail.com    

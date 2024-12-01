@@ -113,7 +113,7 @@ Quando eu tento cadastrar um usuário informando um CEP que não exista
     Input Text                       ${input_CEP}             ${cep_n_encontrado}
 Então deve ser retornada a mensagem "CEP não encontrado"
     Click Element    ${button_proximo_tela2}
-    Wait Until Element Is Visible    ${span_cep_n_encontrado}    
+    Wait Until Element Is Visible    ${span_cep_n_encontrado}    20s
     
 # Cenário 13
 Quando eu tento cadastrar um usuário com um CPF já cadastrado
