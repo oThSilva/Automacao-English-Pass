@@ -1,6 +1,6 @@
 # Testes Automatizados - Cadastro e Login do Site English Pass
 
-Este repositório contém um conjunto de testes automatizados utilizando o Robot Framework, com um total de 15 cenários de teste, incluindo os fluxos End-to-End (E2E) de cadastro de cliente e login no site [English Pass](https://qastage.buildbox.one/18/cadastro/). O objetivo deste projeto é assegurar a qualidade dos processos de cadastro e login, garantindo o cumprimento dos critérios de aceite definidos, <a href="Execução dos teste.mp4">video</a> de evidências  
+Este repositório contém um conjunto de testes automatizados utilizando o Robot Framework, com um total de 15 cenários de teste, incluindo os fluxos End-to-End (E2E) de cadastro de cliente e login no site [English Pass](https://qastage.buildbox.one/18/cadastro/). O objetivo deste projeto é assegurar a qualidade dos processos de cadastro e login, garantindo o cumprimento dos <a href="Critérios de aceite.yaml">critérios de aceite</a>  definidos, <a href="Execução dos teste.mp4">video</a> de evidências  
 
 ## Estrutura do Projeto
 
