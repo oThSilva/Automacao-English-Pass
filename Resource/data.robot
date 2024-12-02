@@ -4,8 +4,8 @@
 ${primeiro_nome}    Thiago
 ${sobrenome}        Silva
 ${data_nasc}        24022001
-${cpf}              05329494044
-${email}            thipereira.santos@gmail.com
+${cpf}              25756083090
+${email}            thipereira.santino@gmail.com
 ${senha}            Senha1234@ 
 ${cep}              68903615
 ${numero}           3
@@ -15,7 +15,7 @@ ${numero}           3
 ${nome_sobrenome_invalido}    thx
 ${data_nasc_invalida}         31122014
 ${cpf_invalido}               45032012066
-${cpf_repetido}               21012053008
+${cpf_repetido}               05329494044
 ${email_invalido}             thipereira.selva@gmail
 ${email_diferente}            emaildeteste@hotmail.com
 ${email_repetido}             thipereira.isilva@gmail.com    

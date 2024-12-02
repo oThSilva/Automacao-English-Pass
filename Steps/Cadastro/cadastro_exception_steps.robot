@@ -13,18 +13,21 @@ Quando eu tento cadastrar um usuário com nome inválido
     Click Element    ${button_proximo}
 Então deve ser retornada a mensagem "Preencha corretamente"
     Wait Until Element Is Visible    ${span_nome_sobrenome_incorreto}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 02.png
 
 # Cenário 3
 Quando eu tento cadastrar um usuário com sobrenome inválido
     Input Text                       ${input_sobrenome}             ${nome_sobrenome_invalido}
     Click Element    ${button_proximo}
-
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 03.png
 # Cenário 4
 Quando eu tento cadastrar um usuário com data de nascimento inválida
     Input Text                       ${input_data_nasc}        ${data_nasc_invalida}
     Click Element    ${button_proximo}
 Então deve ser retornada a mensagem "Data de nascimento inválida"
     Wait Until Element Is Visible    ${span_dt_nasc_invalida}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 04.png
+
 
 # Cenário 5
 Quando eu tento cadastrar um usuário com um CPF inválido
@@ -32,13 +35,17 @@ Quando eu tento cadastrar um usuário com um CPF inválido
     Click Element    ${button_proximo}
 Então deve ser retornada a mensagem "CPF inválido."
     Wait Until Element Is Visible    ${span_cpf_invalido}    
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 05.png
+
 
 # Cenário 6
 Quando eu tento cadastrar um usuário informando email inválido
     Input Text                       ${input_email}        ${email_invalido}
     Click Element    ${button_proximo}
 Então deve ser retornada a mensagem "Email inválido."
-    Wait Until Element Is Visible    ${span_email_invalido}    
+    Wait Until Element Is Visible    ${span_email_invalido}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 06.png
+    
 
 # Cenário 7
 Quando eu tento cadastrar um usuário informando emails diferentes
@@ -46,6 +53,8 @@ Quando eu tento cadastrar um usuário informando emails diferentes
     Input Text                       ${input_email_confirm}        ${email_diferente}
 Então deve ser retornada a mensagem "Os e-mails não são iguais."
     Wait Until Element Is Visible    ${span_email_confim}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 07.png
+
 
 # Cenário 8
 Quando eu tento cadastrar um usuário informando uma senha inválida
@@ -53,6 +62,8 @@ Quando eu tento cadastrar um usuário informando uma senha inválida
     Click Element    ${button_proximo}
 Então deve ser retornada a mensagem "Insira uma senha válida"
     Wait Until Element Is Visible    ${span_senha_invalida}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 08.png
+
 
 # Cenário 9
 Quando eu tento cadastrar um usuário informando senhas diferentes
@@ -60,6 +71,8 @@ Quando eu tento cadastrar um usuário informando senhas diferentes
     Input Text                       ${input_senha_confirm}        ${senha_diferente}
 Então deve ser retornada a mensagem "As senhas não são iguais." 
     Wait Until Element Is Visible    ${span_senha_confirm}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 09.png
+
 
 # Cenário 10
 Quando eu tento cadastrar um usuário sem aceitar os termos
@@ -75,6 +88,8 @@ Quando eu tento cadastrar um usuário sem aceitar os termos
     Click Element                    ${proeficiencia_intermediate} 
 Então deve ser retornada a mensagem "Marque essa caixa se quiser continuar."
     Wait Until Element Is Visible    ${button_proximo}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 10.png
+
 
 # Cenário 11
 Quando eu tento cadastrar um usuário informando um CEP digitado de forma inválida
@@ -94,6 +109,8 @@ Quando eu tento cadastrar um usuário informando um CEP digitado de forma invál
     Input Text                       ${input_CEP}             ${cep_invalido}
 Então deve ser retornada a mensagem "Precisa ser preenchido"
     Wait Until Element Is Visible    ${span_cep_invalido}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 11.png
+
 
 # Cenário 12
 Quando eu tento cadastrar um usuário informando um CEP que não exista
@@ -114,6 +131,8 @@ Quando eu tento cadastrar um usuário informando um CEP que não exista
 Então deve ser retornada a mensagem "CEP não encontrado"
     Click Element    ${button_proximo_tela2}
     Wait Until Element Is Visible    ${span_cep_n_encontrado}    20s
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 12.png
+
     
 # Cenário 13
 Quando eu tento cadastrar um usuário com um CPF já cadastrado
@@ -121,6 +140,8 @@ Quando eu tento cadastrar um usuário com um CPF já cadastrado
     Click Element    ${button_proximo}
 Então deve ser retornada a mensagem "Este CPF já está em uso."
     Wait Until Element Is Visible    ${span_cpf_repetido}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 13.png
+
 
 # Cenário 14
 Quando eu tento cadastrar um usuário com um email já cadastrado
@@ -128,6 +149,8 @@ Quando eu tento cadastrar um usuário com um email já cadastrado
     Click Element    ${button_proximo}
 Então deve ser retornada a mensagem "Este email já está em uso."
     Wait Until Element Is Visible    ${span_email_repetido}
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência 14.png
+
 
 
 
