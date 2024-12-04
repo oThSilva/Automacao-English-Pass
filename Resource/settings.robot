@@ -2,6 +2,7 @@
 Resource    ../Elements/main_elements.robot
 Library  SeleniumLibrary
 Library    Process
+Library    OperatingSystem
 
 *** Variables ***
 #Dados gerais

@@ -1,1434 +1,1537 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-12-01T14:19:23.300420" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-12-04T13:36:24.398902" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="C:\Projetos Th\Projeto automação\English Pass\Test">
 <suite id="s1-s1" name="Cadastro" source="C:\Projetos Th\Projeto automação\English Pass\Test\Cadastro">
-<suite id="s1-s1-s1" name="TC - Cadastro de usuario e2e" source="C:\Projetos Th\Projeto automação\English Pass\Test\Cadastro\TC - Cadastro de usuario e2e.robot">
-<test id="s1-s1-s1-t1" name="TC01 - Cadastrar usuário no site English Pass" line="9">
+<suite id="s1-s1-s1" name="TC01 - Cadastro de usuario exception" source="C:\Projetos Th\Projeto automação\English Pass\Test\Cadastro\TC01 - Cadastro de usuario exception.robot">
+<test id="s1-s1-s1-t1" name="Cadastrar usuário com nome inválido" line="9">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:23.647854" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:36:24.777310" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:19:23.647854" elapsed="3.435400"/>
+<status status="PASS" start="2024-12-04T13:36:24.777310" elapsed="4.004573"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:19:27.083254" elapsed="1.143145"/>
+<status status="PASS" start="2024-12-04T13:36:28.782234" elapsed="0.084895"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:28.227401" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:36:28.868127" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:28.226399" elapsed="0.143995"/>
+<status status="PASS" start="2024-12-04T13:36:28.868127" elapsed="0.206100"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:23.646846" elapsed="4.724056"/>
+<status status="PASS" start="2024-12-04T13:36:24.777310" elapsed="4.296917"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:23.646846" elapsed="4.724056"/>
-</kw>
-<kw name="Quando eu preencho todos os campos corretamente" owner="cadastro_steps">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:28.371911" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
-<arg>${input_nome}</arg>
-<arg>${primeiro_nome}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:28.371911" elapsed="0.243413"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:28.616323" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
-<arg>${input_sobrenome}</arg>
-<arg>${sobrenome}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:28.616323" elapsed="0.149503"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:28.765826" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
-<arg>${input_data_nasc}</arg>
-<arg>${data_nasc}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:28.765826" elapsed="0.187658"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:28.954486" level="INFO">Typing text '63371007006' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
-<arg>${input_CPF}</arg>
-<arg>${cpf}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:28.953484" elapsed="0.162496"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:29.115980" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
-<arg>${input_email}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:29.115980" elapsed="0.206419"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:29.324734" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
-<arg>${input_email_confirm}</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:29.323427" elapsed="0.204591"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:29.528018" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
-<arg>${input_senha}</arg>
-<arg>${senha}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:29.528018" elapsed="0.165363"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:29.694382" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
-<arg>${input_senha_confirm}</arg>
-<arg>${senha}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:29.693381" elapsed="0.146961"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${button_proeficiencia}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2024-12-01T14:19:29.841312" elapsed="0.297575"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${button_proeficiencia}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.140588" elapsed="0.047691"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:30.189423" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
-<arg>${button_proeficiencia}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.189423" elapsed="0.107001"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:30.296424" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
-<arg>${proeficiencia_intermediate}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.296424" elapsed="0.116475"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:30.413899" level="INFO">Clicking element '//input[@id="signup-personal-data-lgpd"]'.</msg>
-<arg>${button_termos}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.412899" elapsed="0.179854"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:30.593259" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
-<arg>${button_proximo}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.593259" elapsed="0.076939"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:30.671205" level="INFO">Typing text '68903615' into text field '//input[@id="signup-address-cep"]'.</msg>
-<arg>${input_CEP}</arg>
-<arg>${cep}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.671205" elapsed="0.110089"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:30.782809" level="INFO">Typing text '3' into text field '//input[@id="signup-address-number"]'.</msg>
-<arg>${input_numero}</arg>
-<arg>${numero}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.782303" elapsed="0.078041"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:19:34.860646" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:19:30.860344" elapsed="4.000302"/>
-</kw>
-<status status="PASS" start="2024-12-01T14:19:28.370902" elapsed="6.489744"/>
-</kw>
-<kw name="E clico no botão &quot;Fazer inscrição&quot;" owner="cadastro_steps">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:34.862515" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
-<arg>${button_proximo_tela2}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:34.862515" elapsed="0.100328"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:19:38.965232" level="INFO">Slept 4 seconds.</msg>
-<arg>4s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:19:34.962843" elapsed="4.002389"/>
-</kw>
-<status status="PASS" start="2024-12-01T14:19:34.861530" elapsed="4.104218"/>
-</kw>
-<kw name="Então o usuário deve ser cadastrado com sucesso" owner="cadastro_steps">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:39.031338" level="INFO">Element '//button[@id="wide_window_button"]' is displayed.</msg>
-<arg>${tela_de_verificao}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:19:38.967776" elapsed="0.063562"/>
-</kw>
-<status status="PASS" start="2024-12-01T14:19:38.966699" elapsed="0.064639"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:19:39.031338" elapsed="2.426485"/>
-</kw>
-<status status="PASS" start="2024-12-01T14:19:23.646103" elapsed="17.813324"/>
-</test>
-<status status="PASS" start="2024-12-01T14:19:23.336631" elapsed="18.125831"/>
-</suite>
-<suite id="s1-s1-s2" name="TC - Cadastro de usuario exception" source="C:\Projetos Th\Projeto automação\English Pass\Test\Cadastro\TC - Cadastro de usuario exception.robot">
-<test id="s1-s1-s2-t1" name="Cenario 02" line="9">
-<kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
-<kw name="Acessar Site" owner="settings">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:41.498765" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:19:41.498765" elapsed="4.161272"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:19:45.660037" elapsed="0.070672"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:45.734194" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
-<arg>${button_init}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:45.732521" elapsed="0.341341"/>
-</kw>
-<status status="PASS" start="2024-12-01T14:19:41.498765" elapsed="4.575097"/>
-</kw>
-<status status="PASS" start="2024-12-01T14:19:41.498765" elapsed="4.575097"/>
+<status status="PASS" start="2024-12-04T13:36:24.777310" elapsed="4.296917"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário com nome inválido" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${input_nome}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:19:46.082239" elapsed="0.042596"/>
+<status status="PASS" start="2024-12-04T13:36:29.078915" elapsed="0.049098"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:46.126162" level="INFO">Typing text 'thx' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
+<msg time="2024-12-04T13:36:29.128013" level="INFO">Typing text 'thx' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
 <arg>${input_nome}</arg>
 <arg>${nome_sobrenome_invalido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:46.124835" elapsed="0.199584"/>
+<status status="PASS" start="2024-12-04T13:36:29.128013" elapsed="0.147365"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:46.325419" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:29.276407" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:46.324419" elapsed="0.099477"/>
+<status status="PASS" start="2024-12-04T13:36:29.275378" elapsed="0.069491"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:46.082239" elapsed="0.341657"/>
+<status status="PASS" start="2024-12-04T13:36:29.076955" elapsed="0.267914"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Preencha corretamente&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_nome_sobrenome_incorreto}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:19:46.429404" elapsed="0.068597"/>
+<status status="PASS" start="2024-12-04T13:36:29.344869" elapsed="0.060828"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:46.427423" elapsed="0.070578"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:36:29.642065" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia1.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:36:29.405697" elapsed="0.236368"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:36:29.344869" elapsed="0.297196"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:46.499009" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:29.657619" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:46.499009" elapsed="0.113360"/>
+<status status="PASS" start="2024-12-04T13:36:29.657619" elapsed="0.098347"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:19:49.613549" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:36:32.757168" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:19:46.612877" elapsed="3.000672"/>
+<status status="PASS" start="2024-12-04T13:36:29.756993" elapsed="3.000175"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:19:49.614066" elapsed="4.057253"/>
+<status status="PASS" start="2024-12-04T13:36:32.757168" elapsed="2.179228"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:46.499009" elapsed="7.172310"/>
+<status status="PASS" start="2024-12-04T13:36:29.656593" elapsed="5.279803"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:46.499009" elapsed="7.172310"/>
+<status status="PASS" start="2024-12-04T13:36:29.642065" elapsed="5.294331"/>
 </kw>
-<doc>Cadastrar usuário com nome inváldo</doc>
-<status status="PASS" start="2024-12-01T14:19:41.497784" elapsed="12.174590"/>
+<doc>Validar se ao cadastrar um usuário com nome inválido é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:36:24.777310" elapsed="10.159086"/>
 </test>
-<test id="s1-s1-s2-t2" name="Cenario 03" line="14">
+<test id="s1-s1-s1-t2" name="Cadastrar usuário com sobrenome inválido" line="14">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:53.677384" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:36:34.936396" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:19:53.676387" elapsed="4.147598"/>
+<status status="PASS" start="2024-12-04T13:36:34.936396" elapsed="3.584703"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:19:57.824987" elapsed="0.221542"/>
+<status status="PASS" start="2024-12-04T13:36:38.522440" elapsed="0.049924"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:58.047541" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:36:38.572364" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:58.046529" elapsed="0.288901"/>
+<status status="PASS" start="2024-12-04T13:36:38.572364" elapsed="0.206685"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:53.676387" elapsed="4.659043"/>
+<status status="PASS" start="2024-12-04T13:36:34.936396" elapsed="3.842653"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:53.675472" elapsed="4.659958"/>
+<status status="PASS" start="2024-12-04T13:36:34.936396" elapsed="3.842653"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário com sobrenome inválido" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:58.336384" level="INFO">Typing text 'thx' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
+<msg time="2024-12-04T13:36:38.781320" level="INFO">Typing text 'thx' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
 <arg>${input_sobrenome}</arg>
 <arg>${nome_sobrenome_invalido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:58.336384" elapsed="0.238905"/>
+<status status="PASS" start="2024-12-04T13:36:38.781320" elapsed="0.226965"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:58.576298" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:39.008285" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:58.576298" elapsed="0.106413"/>
+<status status="PASS" start="2024-12-04T13:36:39.008285" elapsed="0.087082"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:58.336384" elapsed="0.346327"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:36:39.367306" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia2.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:36:39.095367" elapsed="0.271939"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:36:38.780313" elapsed="0.586993"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Preencha corretamente&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_nome_sobrenome_incorreto}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:19:58.690496" elapsed="0.064247"/>
+<status status="PASS" start="2024-12-04T13:36:39.368561" elapsed="0.051854"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:58.689083" elapsed="0.066659"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:36:39.649689" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia3.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:36:39.420415" elapsed="0.229274"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:36:39.368561" elapsed="0.281128"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:19:58.756741" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:39.651688" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:19:58.756741" elapsed="0.137605"/>
+<status status="PASS" start="2024-12-04T13:36:39.651688" elapsed="0.315138"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:20:01.897694" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:36:42.968291" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:19:58.895382" elapsed="3.002312"/>
+<status status="PASS" start="2024-12-04T13:36:39.967827" elapsed="3.000464"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:20:01.897694" elapsed="2.437936"/>
+<status status="PASS" start="2024-12-04T13:36:42.968291" elapsed="2.169996"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:58.756741" elapsed="5.579792"/>
+<status status="PASS" start="2024-12-04T13:36:39.650687" elapsed="5.487600"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:19:58.755742" elapsed="5.580791"/>
+<status status="PASS" start="2024-12-04T13:36:39.650687" elapsed="5.487600"/>
 </kw>
-<doc>Cadastrar usuário com sobrenome inválido</doc>
-<status status="PASS" start="2024-12-01T14:19:53.674386" elapsed="10.662815"/>
+<doc>Validar se ao cadastrar um usuário com sobrenome inválido é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:36:34.936396" elapsed="10.201891"/>
 </test>
-<test id="s1-s1-s2-t3" name="Cenario 04" line="19">
+<test id="s1-s1-s1-t3" name="Cadastrar usuário com data de nascimento inválida" line="19">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:04.340849" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:36:45.145039" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:20:04.340849" elapsed="3.484220"/>
+<status status="PASS" start="2024-12-04T13:36:45.145039" elapsed="3.316557"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:20:07.825069" elapsed="0.902656"/>
+<status status="PASS" start="2024-12-04T13:36:48.462458" elapsed="0.039420"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:08.727725" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:36:48.501878" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:08.727725" elapsed="0.255932"/>
+<status status="PASS" start="2024-12-04T13:36:48.501878" elapsed="0.232445"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:04.340256" elapsed="4.643401"/>
+<status status="PASS" start="2024-12-04T13:36:45.145039" elapsed="3.589284"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:04.339367" elapsed="4.644290"/>
+<status status="PASS" start="2024-12-04T13:36:45.145039" elapsed="3.589284"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário com data de nascimento inválida" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:09.006261" level="INFO">Typing text '31122014' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
+<msg time="2024-12-04T13:36:48.735323" level="INFO">Typing text '31122014' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
 <arg>${input_data_nasc}</arg>
 <arg>${data_nasc_invalida}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:09.005260" elapsed="0.249297"/>
+<status status="PASS" start="2024-12-04T13:36:48.735323" elapsed="0.176457"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:09.255560" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:48.911780" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:09.254557" elapsed="0.087292"/>
+<status status="PASS" start="2024-12-04T13:36:48.911780" elapsed="0.069689"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:09.005260" elapsed="0.336589"/>
+<status status="PASS" start="2024-12-04T13:36:48.734323" elapsed="0.247146"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Data de nascimento inválida&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_dt_nasc_invalida}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:20:09.343309" elapsed="0.269218"/>
+<status status="PASS" start="2024-12-04T13:36:48.982485" elapsed="0.252595"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:09.341849" elapsed="0.270678"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:36:49.416792" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia4.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:36:49.235080" elapsed="0.181712"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:36:48.982485" elapsed="0.435315"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:09.613535" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:49.419807" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:09.613535" elapsed="0.151827"/>
+<status status="PASS" start="2024-12-04T13:36:49.419807" elapsed="0.136814"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:20:12.766708" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:36:52.556947" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:20:09.766367" elapsed="3.000853"/>
+<status status="PASS" start="2024-12-04T13:36:49.556621" elapsed="3.000326"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:20:12.768235" elapsed="2.509177"/>
+<status status="PASS" start="2024-12-04T13:36:52.558769" elapsed="2.178403"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:09.613535" elapsed="5.664767"/>
+<status status="PASS" start="2024-12-04T13:36:49.418801" elapsed="5.319872"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:09.612527" elapsed="5.665775"/>
+<status status="PASS" start="2024-12-04T13:36:49.418801" elapsed="5.319872"/>
 </kw>
-<doc>Cadastrar usuário com data de nascimento inválida</doc>
-<status status="PASS" start="2024-12-01T14:20:04.338190" elapsed="10.940112"/>
+<doc>Validar se ao cadastrar um usuário com data de nascimento inválida é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:36:45.144435" elapsed="9.594238"/>
 </test>
-<test id="s1-s1-s2-t4" name="Cenario 05" line="24">
+<test id="s1-s1-s1-t4" name="Cadastrar usuário com CPF inválido" line="24">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:15.284047" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:36:54.738673" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:20:15.283050" elapsed="3.873961"/>
+<status status="PASS" start="2024-12-04T13:36:54.738673" elapsed="3.265813"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:20:19.157011" elapsed="0.201267"/>
+<status status="PASS" start="2024-12-04T13:36:58.004486" elapsed="0.033703"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:19.360934" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:36:58.038189" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:19.359243" elapsed="0.270416"/>
+<status status="PASS" start="2024-12-04T13:36:58.038189" elapsed="0.234850"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:15.283050" elapsed="4.347116"/>
+<status status="PASS" start="2024-12-04T13:36:54.738673" elapsed="3.534366"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:15.282051" elapsed="4.348115"/>
+<status status="PASS" start="2024-12-04T13:36:54.738673" elapsed="3.534366"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário com um CPF inválido" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:19.633696" level="INFO">Typing text '45032012066' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
+<msg time="2024-12-04T13:36:58.274038" level="INFO">Typing text '45032012066' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
 <arg>${input_CPF}</arg>
 <arg>${cpf_invalido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:19.632685" elapsed="0.242910"/>
+<status status="PASS" start="2024-12-04T13:36:58.273039" elapsed="0.193313"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:19.876603" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:58.466352" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:19.876603" elapsed="0.120084"/>
+<status status="PASS" start="2024-12-04T13:36:58.466352" elapsed="0.069430"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:19.632685" elapsed="0.365222"/>
+<status status="PASS" start="2024-12-04T13:36:58.273039" elapsed="0.262743"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;CPF inválido.&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_cpf_invalido}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:20:19.998916" elapsed="0.509706"/>
+<status status="PASS" start="2024-12-04T13:36:58.537217" elapsed="0.683532"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:19.997907" elapsed="0.510715"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:36:59.440795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia5.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:36:59.220749" elapsed="0.220046"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:36:58.536798" elapsed="0.903997"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:20.510131" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:36:59.440795" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:20.510131" elapsed="0.137133"/>
+<status status="PASS" start="2024-12-04T13:36:59.440795" elapsed="0.100457"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:20:23.648760" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:37:02.542894" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:20:20.648338" elapsed="3.000422"/>
+<status status="PASS" start="2024-12-04T13:36:59.541252" elapsed="3.001642"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:20:23.648760" elapsed="2.604386"/>
+<status status="PASS" start="2024-12-04T13:37:02.542894" elapsed="2.200892"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:20.510131" elapsed="5.743015"/>
+<status status="PASS" start="2024-12-04T13:36:59.440795" elapsed="5.302991"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:20.508622" elapsed="5.744524"/>
+<status status="PASS" start="2024-12-04T13:36:59.440795" elapsed="5.302991"/>
 </kw>
-<doc>Cadastrar usuário com CPF inválido</doc>
-<status status="PASS" start="2024-12-01T14:20:15.280035" elapsed="10.974089"/>
+<doc>Validar se ao cadastrar um usuário com CPF inválido é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:36:54.738673" elapsed="10.005113"/>
 </test>
-<test id="s1-s1-s2-t5" name="Cenario 06" line="29">
+<test id="s1-s1-s1-t5" name="Cadastrar usuário com email inválido" line="29">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:26.255646" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:37:04.743786" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:20:26.255646" elapsed="4.193468"/>
+<status status="PASS" start="2024-12-04T13:37:04.743786" elapsed="3.906240"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:20:30.449182" elapsed="0.100359"/>
+<status status="PASS" start="2024-12-04T13:37:08.650026" elapsed="0.036874"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:30.554129" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:37:08.688936" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:30.553100" elapsed="0.328063"/>
+<status status="PASS" start="2024-12-04T13:37:08.687902" elapsed="0.184956"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:26.255646" elapsed="4.626526"/>
+<status status="PASS" start="2024-12-04T13:37:04.743786" elapsed="4.130069"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:26.255646" elapsed="4.626526"/>
+<status status="PASS" start="2024-12-04T13:37:04.743786" elapsed="4.130069"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário informando email inválido" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:30.883170" level="INFO">Typing text 'thipereira.selva@gmail' into text field '//input[@id="signup-personal-data-email"]'.</msg>
+<msg time="2024-12-04T13:37:08.875898" level="INFO">Typing text 'thipereira.selva@gmail' into text field '//input[@id="signup-personal-data-email"]'.</msg>
 <arg>${input_email}</arg>
 <arg>${email_invalido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:30.883170" elapsed="0.258442"/>
+<status status="PASS" start="2024-12-04T13:37:08.874880" elapsed="0.182965"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:31.142625" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:09.057845" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:31.142625" elapsed="0.099781"/>
+<status status="PASS" start="2024-12-04T13:37:09.057845" elapsed="0.074320"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:30.882172" elapsed="0.360234"/>
+<status status="PASS" start="2024-12-04T13:37:08.873855" elapsed="0.258310"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Email inválido.&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_email_invalido}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:20:31.243296" elapsed="0.556060"/>
+<status status="PASS" start="2024-12-04T13:37:09.133555" elapsed="0.694746"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:31.242406" elapsed="0.556950"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:37:10.044880" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia6.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:37:09.828301" elapsed="0.216579"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:37:09.133179" elapsed="0.911701"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:31.804930" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:10.049931" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:31.803951" elapsed="0.208021"/>
+<status status="PASS" start="2024-12-04T13:37:10.049931" elapsed="0.114531"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:20:35.013947" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:37:13.165164" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:20:32.011972" elapsed="3.001975"/>
+<status status="PASS" start="2024-12-04T13:37:10.164462" elapsed="3.000702"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:20:35.014454" elapsed="2.459053"/>
+<status status="PASS" start="2024-12-04T13:37:13.165164" elapsed="2.186382"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:31.803951" elapsed="5.670441"/>
+<status status="PASS" start="2024-12-04T13:37:10.048923" elapsed="5.302623"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:31.800871" elapsed="5.673521"/>
+<status status="PASS" start="2024-12-04T13:37:10.048923" elapsed="5.302623"/>
 </kw>
-<doc>Cadastrar usuário com email inválido</doc>
-<status status="PASS" start="2024-12-01T14:20:26.255285" elapsed="11.219107"/>
+<doc>Validar se ao cadastrar um usuário com email inválido é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:37:04.743786" elapsed="10.607760"/>
 </test>
-<test id="s1-s1-s2-t6" name="Cenario 07" line="34">
+<test id="s1-s1-s1-t6" name="Cadastrar usuário com emails diferentes" line="34">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:37.479236" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:37:15.357564" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:20:37.478100" elapsed="10.949862"/>
+<status status="PASS" start="2024-12-04T13:37:15.357564" elapsed="3.308525"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:20:48.427962" elapsed="0.172643"/>
+<status status="PASS" start="2024-12-04T13:37:18.666089" elapsed="0.036359"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:48.602622" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:37:18.711138" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:48.601620" elapsed="0.278578"/>
+<status status="PASS" start="2024-12-04T13:37:18.702448" elapsed="0.179874"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:37.478100" elapsed="11.402098"/>
+<status status="PASS" start="2024-12-04T13:37:15.357564" elapsed="3.524758"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:37.477033" elapsed="11.403671"/>
+<status status="PASS" start="2024-12-04T13:37:15.351546" elapsed="3.530776"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário informando emails diferentes" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:48.881710" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
+<msg time="2024-12-04T13:37:18.883324" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
 <arg>${input_email}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:48.881710" elapsed="0.242078"/>
+<status status="PASS" start="2024-12-04T13:37:18.883324" elapsed="0.208545"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:49.124789" level="INFO">Typing text 'emaildeteste@hotmail.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
+<msg time="2024-12-04T13:37:19.091869" level="INFO">Typing text 'emaildeteste@hotmail.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
 <arg>${input_email_confirm}</arg>
 <arg>${email_diferente}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:49.123788" elapsed="0.158565"/>
+<status status="PASS" start="2024-12-04T13:37:19.091869" elapsed="0.103182"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:48.881710" elapsed="0.400643"/>
+<status status="PASS" start="2024-12-04T13:37:18.883324" elapsed="0.311727"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Os e-mails não são iguais.&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_email_confim}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:20:49.282353" elapsed="0.043653"/>
+<status status="PASS" start="2024-12-04T13:37:19.195051" elapsed="0.032992"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:49.282353" elapsed="0.043653"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:37:19.359708" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia7.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:37:19.228043" elapsed="0.131665"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:37:19.195051" elapsed="0.164657"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:49.328023" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:19.359708" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:49.328023" elapsed="0.137210"/>
+<status status="PASS" start="2024-12-04T13:37:19.359708" elapsed="0.090138"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:20:52.465460" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:37:22.451573" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:20:49.465233" elapsed="3.000227"/>
+<status status="PASS" start="2024-12-04T13:37:19.449846" elapsed="3.001727"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:20:52.465460" elapsed="2.368994"/>
+<status status="PASS" start="2024-12-04T13:37:22.451573" elapsed="2.206735"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:49.327004" elapsed="5.507450"/>
+<status status="PASS" start="2024-12-04T13:37:19.359708" elapsed="5.298600"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:49.327004" elapsed="5.507450"/>
+<status status="PASS" start="2024-12-04T13:37:19.359708" elapsed="5.298600"/>
 </kw>
-<doc>Cadastrar usuário com emails diferentes</doc>
-<status status="PASS" start="2024-12-01T14:20:37.475388" elapsed="17.360539"/>
+<doc>Validar se ao cadastrar um usuário com emails diferentes é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:37:15.351546" elapsed="9.307776"/>
 </test>
-<test id="s1-s1-s2-t7" name="Cenario 08" line="39">
+<test id="s1-s1-s1-t7" name="Cadastrar usuário com senha inválida" line="39">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:54.838727" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:37:24.664369" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:20:54.838727" elapsed="3.872212"/>
+<status status="PASS" start="2024-12-04T13:37:24.664369" elapsed="3.399771"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:20:58.711939" elapsed="0.169951"/>
+<status status="PASS" start="2024-12-04T13:37:28.064140" elapsed="0.043496"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:58.882896" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:37:28.108636" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:58.881890" elapsed="0.337788"/>
+<status status="PASS" start="2024-12-04T13:37:28.108636" elapsed="0.225464"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:54.838727" elapsed="4.380951"/>
+<status status="PASS" start="2024-12-04T13:37:24.663344" elapsed="3.670756"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:54.838727" elapsed="4.380951"/>
+<status status="PASS" start="2024-12-04T13:37:24.662322" elapsed="3.671778"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário informando uma senha inválida" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:59.220789" level="INFO">Typing text '1324' into text field '//input[@id="signup-personal-data-password"]'.</msg>
+<msg time="2024-12-04T13:37:28.335098" level="INFO">Typing text '1324' into text field '//input[@id="signup-personal-data-password"]'.</msg>
 <arg>${input_senha}</arg>
 <arg>${senha_invalida}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:59.220789" elapsed="0.231283"/>
+<status status="PASS" start="2024-12-04T13:37:28.335098" elapsed="0.168281"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:59.452072" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:28.503379" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:59.452072" elapsed="0.112488"/>
+<status status="PASS" start="2024-12-04T13:37:28.503379" elapsed="0.087649"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:59.220789" elapsed="0.343771"/>
+<status status="PASS" start="2024-12-04T13:37:28.335098" elapsed="0.255930"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Insira uma senha válida&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_senha_invalida}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:20:59.564560" elapsed="0.199467"/>
+<status status="PASS" start="2024-12-04T13:37:28.593495" elapsed="0.044008"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:59.564560" elapsed="0.199467"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:37:28.915439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia8.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:37:28.637503" elapsed="0.277936"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:37:28.592989" elapsed="0.323382"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:20:59.767026" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:28.917370" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:20:59.767026" elapsed="0.206193"/>
+<status status="PASS" start="2024-12-04T13:37:28.917370" elapsed="0.088927"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:21:02.975782" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:37:32.006491" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:20:59.974228" elapsed="3.001554"/>
+<status status="PASS" start="2024-12-04T13:37:29.006297" elapsed="3.000194"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:21:02.976289" elapsed="3.992830"/>
+<status status="PASS" start="2024-12-04T13:37:32.006491" elapsed="2.166581"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:59.766028" elapsed="7.203606"/>
+<status status="PASS" start="2024-12-04T13:37:28.916371" elapsed="5.256701"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:20:59.765026" elapsed="7.204662"/>
+<status status="PASS" start="2024-12-04T13:37:28.916371" elapsed="5.256701"/>
 </kw>
-<doc>Cadastrar usuário com senha inválida</doc>
-<status status="PASS" start="2024-12-01T14:20:54.837522" elapsed="12.132166"/>
+<doc>Validar se ao cadastrar um usuário com senha inválida é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:37:24.661321" elapsed="9.511751"/>
 </test>
-<test id="s1-s1-s2-t8" name="Cenario 09" line="44">
+<test id="s1-s1-s1-t8" name="Cadastrar usuário com senhas diferentes" line="44">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:06.977652" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:37:34.173072" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:21:06.976652" elapsed="5.553078"/>
+<status status="PASS" start="2024-12-04T13:37:34.173072" elapsed="2.894348"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:21:12.529730" elapsed="0.329254"/>
+<status status="PASS" start="2024-12-04T13:37:37.067420" elapsed="0.423969"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:12.859990" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:37:37.492409" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:12.858984" elapsed="0.205170"/>
+<status status="PASS" start="2024-12-04T13:37:37.492409" elapsed="0.116433"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:06.976652" elapsed="6.087502"/>
+<status status="PASS" start="2024-12-04T13:37:34.173072" elapsed="3.435770"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:06.975652" elapsed="6.089501"/>
+<status status="PASS" start="2024-12-04T13:37:34.173072" elapsed="3.435770"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário informando senhas diferentes" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:13.066155" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
+<msg time="2024-12-04T13:37:37.609845" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
 <arg>${input_senha}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:13.066155" elapsed="0.237135"/>
+<status status="PASS" start="2024-12-04T13:37:37.609845" elapsed="0.229587"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:13.304288" level="INFO">Typing text 'senhadeteste' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
+<msg time="2024-12-04T13:37:37.839432" level="INFO">Typing text 'senhadeteste' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
 <arg>${input_senha_confirm}</arg>
 <arg>${senha_diferente}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:13.304288" elapsed="0.191128"/>
+<status status="PASS" start="2024-12-04T13:37:37.839432" elapsed="0.083756"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:13.065153" elapsed="0.430416"/>
+<status status="PASS" start="2024-12-04T13:37:37.609845" elapsed="0.313343"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;As senhas não são iguais.&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_senha_confirm}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:21:13.496597" elapsed="0.041877"/>
+<status status="PASS" start="2024-12-04T13:37:37.923188" elapsed="0.026016"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:13.496075" elapsed="0.042399"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:37:38.107384" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia9.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:37:37.950353" elapsed="0.157031"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:37:37.923188" elapsed="0.184196"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:13.541708" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:38.111094" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:13.541708" elapsed="0.103138"/>
+<status status="PASS" start="2024-12-04T13:37:38.110086" elapsed="0.078272"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:21:16.647087" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:37:41.189755" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:21:13.644846" elapsed="3.002241"/>
+<status status="PASS" start="2024-12-04T13:37:38.188358" elapsed="3.001397"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:21:16.648097" elapsed="4.006562"/>
+<status status="PASS" start="2024-12-04T13:37:41.189755" elapsed="2.205700"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:13.541201" elapsed="7.113966"/>
+<status status="PASS" start="2024-12-04T13:37:38.110086" elapsed="5.285369"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:13.540071" elapsed="7.115096"/>
+<status status="PASS" start="2024-12-04T13:37:38.110086" elapsed="5.285369"/>
 </kw>
-<doc>Cadastrar usuário com senhas diferentes</doc>
-<status status="PASS" start="2024-12-01T14:21:06.974656" elapsed="13.681041"/>
+<doc>Validar se ao cadastrar um usuário com senhas diferentes é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:37:34.173072" elapsed="9.222975"/>
 </test>
-<test id="s1-s1-s2-t9" name="Cenario 10" line="49">
+<test id="s1-s1-s1-t9" name="Cadastrar usuário sem aceitar os termos" line="49">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:20.657818" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:37:43.398057" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:21:20.657818" elapsed="3.499583"/>
+<status status="PASS" start="2024-12-04T13:37:43.398057" elapsed="3.616441"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:21:24.157401" elapsed="1.000311"/>
+<status status="PASS" start="2024-12-04T13:37:47.014498" elapsed="0.067834"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:25.157712" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:37:47.083313" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:25.157712" elapsed="0.196662"/>
+<status status="PASS" start="2024-12-04T13:37:47.082332" elapsed="0.189424"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:20.657292" elapsed="4.697082"/>
+<status status="PASS" start="2024-12-04T13:37:43.398057" elapsed="3.873699"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:20.657292" elapsed="4.697082"/>
+<status status="PASS" start="2024-12-04T13:37:43.397056" elapsed="3.874700"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário sem aceitar os termos" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:25.355575" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
+<msg time="2024-12-04T13:37:47.272758" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
 <arg>${input_nome}</arg>
 <arg>${primeiro_nome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:25.355575" elapsed="0.240287"/>
+<status status="PASS" start="2024-12-04T13:37:47.272758" elapsed="0.228885"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:25.595862" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
+<msg time="2024-12-04T13:37:47.502645" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
 <arg>${input_sobrenome}</arg>
 <arg>${sobrenome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:25.595862" elapsed="0.130433"/>
+<status status="PASS" start="2024-12-04T13:37:47.502645" elapsed="0.113721"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:25.728298" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
+<msg time="2024-12-04T13:37:47.618614" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
 <arg>${input_data_nasc}</arg>
 <arg>${data_nasc}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:25.727314" elapsed="0.122509"/>
+<status status="PASS" start="2024-12-04T13:37:47.618078" elapsed="0.098516"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:25.850675" level="INFO">Typing text '63371007006' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
+<msg time="2024-12-04T13:37:47.716594" level="INFO">Typing text '74880662003' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
 <arg>${input_CPF}</arg>
 <arg>${cpf}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:25.850675" elapsed="0.148513"/>
+<status status="PASS" start="2024-12-04T13:37:47.716594" elapsed="0.114818"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:26.000702" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
+<msg time="2024-12-04T13:37:47.833366" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
 <arg>${input_email}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:25.999188" elapsed="0.183813"/>
+<status status="PASS" start="2024-12-04T13:37:47.832406" elapsed="0.175298"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:26.184120" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
+<msg time="2024-12-04T13:37:48.008712" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
 <arg>${input_email_confirm}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.183001" elapsed="0.170325"/>
+<status status="PASS" start="2024-12-04T13:37:48.007704" elapsed="0.179599"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:26.354334" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
+<msg time="2024-12-04T13:37:48.188397" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
 <arg>${input_senha}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.353326" elapsed="0.126517"/>
+<status status="PASS" start="2024-12-04T13:37:48.187303" elapsed="0.109826"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:26.479843" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
+<msg time="2024-12-04T13:37:48.298209" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
 <arg>${input_senha_confirm}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.479843" elapsed="0.148924"/>
+<status status="PASS" start="2024-12-04T13:37:48.297129" elapsed="0.117413"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:26.628767" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
+<msg time="2024-12-04T13:37:48.414542" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
 <arg>${button_proeficiencia}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.628767" elapsed="0.084164"/>
+<status status="PASS" start="2024-12-04T13:37:48.414542" elapsed="0.067470"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:26.712931" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
+<msg time="2024-12-04T13:37:48.483039" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
 <arg>${proeficiencia_intermediate}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.712931" elapsed="0.116858"/>
+<status status="PASS" start="2024-12-04T13:37:48.483039" elapsed="0.076027"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:25.354374" elapsed="1.475415"/>
+<status status="PASS" start="2024-12-04T13:37:47.272758" elapsed="1.286308"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Marque essa caixa se quiser continuar.&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${button_proximo}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.830796" elapsed="0.043040"/>
+<status status="PASS" start="2024-12-04T13:37:48.559066" elapsed="0.039692"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:26.829789" elapsed="0.044047"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:37:48.598758" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<arg>${button_proximo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:37:48.598758" elapsed="0.074154"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:37:48.922205" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia10.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:37:48.672912" elapsed="0.249293"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:37:48.559066" elapsed="0.363139"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:26.876845" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:48.927048" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.876845" elapsed="0.113228"/>
+<status status="PASS" start="2024-12-04T13:37:48.924993" elapsed="0.105230"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:21:29.991595" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:37:52.030406" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:21:26.991083" elapsed="3.000512"/>
+<status status="PASS" start="2024-12-04T13:37:49.030223" elapsed="3.000183"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:21:29.991595" elapsed="2.531529"/>
+<status status="PASS" start="2024-12-04T13:37:52.030911" elapsed="2.359932"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:26.875889" elapsed="5.647235"/>
+<status status="PASS" start="2024-12-04T13:37:48.923215" elapsed="5.468187"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:26.875889" elapsed="5.647235"/>
+<status status="PASS" start="2024-12-04T13:37:48.922205" elapsed="5.469197"/>
 </kw>
-<doc>Cadastrar usuário sem aceitar os termos</doc>
-<status status="PASS" start="2024-12-01T14:21:20.656775" elapsed="11.867356"/>
+<doc>Validar se ao cadastrar um usuário sem aceitar os termos é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:37:43.396047" elapsed="10.995355"/>
 </test>
-<test id="s1-s1-s2-t10" name="Cenario 11" line="54">
+<test id="s1-s1-s1-t10" name="Cadastrar usuário com CEP inválido" line="54">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:32.528204" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:37:54.395981" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:21:32.528204" elapsed="3.370022"/>
+<status status="PASS" start="2024-12-04T13:37:54.395981" elapsed="3.016050"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:21:35.898226" elapsed="1.065793"/>
+<status status="PASS" start="2024-12-04T13:37:57.412031" elapsed="0.733940"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:36.964019" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:37:58.147239" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:36.964019" elapsed="0.189876"/>
+<status status="PASS" start="2024-12-04T13:37:58.147239" elapsed="0.120066"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:32.527218" elapsed="4.627792"/>
+<status status="PASS" start="2024-12-04T13:37:54.395981" elapsed="3.871324"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:32.526126" elapsed="4.628884"/>
+<status status="PASS" start="2024-12-04T13:37:54.395413" elapsed="3.871892"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário informando um CEP digitado de forma inválida" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:37.156017" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
+<msg time="2024-12-04T13:37:58.268305" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
 <arg>${input_nome}</arg>
 <arg>${primeiro_nome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:37.156017" elapsed="0.225599"/>
+<status status="PASS" start="2024-12-04T13:37:58.268305" elapsed="0.185074"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:37.381616" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
+<msg time="2024-12-04T13:37:58.454393" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
 <arg>${input_sobrenome}</arg>
 <arg>${sobrenome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:37.381616" elapsed="0.112783"/>
+<status status="PASS" start="2024-12-04T13:37:58.454393" elapsed="0.105908"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:37.495030" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
+<msg time="2024-12-04T13:37:58.561302" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
 <arg>${input_data_nasc}</arg>
 <arg>${data_nasc}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:37.494399" elapsed="0.145264"/>
+<status status="PASS" start="2024-12-04T13:37:58.561302" elapsed="0.101881"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:37.640175" level="INFO">Typing text '63371007006' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
+<msg time="2024-12-04T13:37:58.664186" level="INFO">Typing text '74880662003' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
 <arg>${input_CPF}</arg>
 <arg>${cpf}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:37.640175" elapsed="0.131592"/>
+<status status="PASS" start="2024-12-04T13:37:58.664186" elapsed="0.109946"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:37.775101" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
+<msg time="2024-12-04T13:37:58.775159" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
 <arg>${input_email}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:37.772818" elapsed="0.199379"/>
+<status status="PASS" start="2024-12-04T13:37:58.775159" elapsed="0.147298"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:37.974173" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
+<msg time="2024-12-04T13:37:58.922457" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
 <arg>${input_email_confirm}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:37.974173" elapsed="0.186198"/>
+<status status="PASS" start="2024-12-04T13:37:58.922457" elapsed="0.199945"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:38.161372" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
+<msg time="2024-12-04T13:37:59.124011" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
 <arg>${input_senha}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:38.160371" elapsed="0.147108"/>
+<status status="PASS" start="2024-12-04T13:37:59.124011" elapsed="0.123717"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:38.308494" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
+<msg time="2024-12-04T13:37:59.247728" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
 <arg>${input_senha_confirm}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:38.308494" elapsed="0.138776"/>
+<status status="PASS" start="2024-12-04T13:37:59.247728" elapsed="0.109047"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:38.448274" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
+<msg time="2024-12-04T13:37:59.357225" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
 <arg>${button_proeficiencia}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:38.447270" elapsed="0.083579"/>
+<status status="PASS" start="2024-12-04T13:37:59.356775" elapsed="0.082080"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:38.531875" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
+<msg time="2024-12-04T13:37:59.439858" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
 <arg>${proeficiencia_intermediate}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:38.531875" elapsed="0.158063"/>
+<status status="PASS" start="2024-12-04T13:37:59.439858" elapsed="0.086626"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:38.690946" level="INFO">Clicking element '//input[@id="signup-personal-data-lgpd"]'.</msg>
+<msg time="2024-12-04T13:37:59.527485" level="INFO">Clicking element '//input[@id="signup-personal-data-lgpd"]'.</msg>
 <arg>${button_termos}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:38.690946" elapsed="0.173392"/>
+<status status="PASS" start="2024-12-04T13:37:59.527485" elapsed="0.171999"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:38.865338" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:37:59.700487" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:38.865338" elapsed="0.129355"/>
+<status status="PASS" start="2024-12-04T13:37:59.699484" elapsed="0.078737"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${input_CEP}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:21:38.994693" elapsed="0.036370"/>
+<status status="PASS" start="2024-12-04T13:37:59.778221" elapsed="0.028351"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:39.032087" level="INFO">Typing text '1702307' into text field '//input[@id="signup-address-cep"]'.</msg>
+<msg time="2024-12-04T13:37:59.807448" level="INFO">Typing text '1702307' into text field '//input[@id="signup-address-cep"]'.</msg>
 <arg>${input_CEP}</arg>
 <arg>${cep_invalido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:39.031063" elapsed="0.101133"/>
+<status status="PASS" start="2024-12-04T13:37:59.806572" elapsed="0.092770"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:37.155010" elapsed="1.977186"/>
+<status status="PASS" start="2024-12-04T13:37:58.267305" elapsed="1.632037"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Precisa ser preenchido&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_cep_invalido}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:21:39.137074" elapsed="0.027461"/>
+<status status="PASS" start="2024-12-04T13:37:59.899342" elapsed="0.021931"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:39.136057" elapsed="0.028478"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:00.074806" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia11.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:37:59.921273" elapsed="0.153533"/>
 </kw>
-<kw name="E devo ser impedido de seguir com o cadastro na tela 2" owner="settings" type="TEARDOWN">
+<status status="PASS" start="2024-12-04T13:37:59.899342" elapsed="0.176466"/>
+</kw>
+<kw name="E devo ser impedido de seguir com o cadastro na tela 2" owner="settings">
 <kw name="Clicar no botão &quot;Proximo&quot; da tela 2 e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:39.165534" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
+<msg time="2024-12-04T13:38:00.076807" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
 <arg>${button_proximo_tela2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:39.165534" elapsed="0.089969"/>
+<status status="PASS" start="2024-12-04T13:38:00.076807" elapsed="0.078354"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:21:42.257208" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:38:03.156377" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:21:39.255503" elapsed="3.001705"/>
+<status status="PASS" start="2024-12-04T13:38:00.155161" elapsed="3.001216"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:21:42.257208" elapsed="2.698918"/>
+<status status="PASS" start="2024-12-04T13:38:03.156377" elapsed="2.366323"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:39.165534" elapsed="5.790592"/>
+<status status="PASS" start="2024-12-04T13:38:00.075808" elapsed="5.446892"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:39.165534" elapsed="5.790592"/>
+<status status="PASS" start="2024-12-04T13:38:00.075808" elapsed="5.448789"/>
 </kw>
-<doc>Cadastrar usuário com CEP inválido</doc>
-<status status="PASS" start="2024-12-01T14:21:32.526126" elapsed="12.430909"/>
+<doc>Validar se ao cadastrar um usuário com CEP inválido é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:37:54.393414" elapsed="11.131183"/>
 </test>
-<test id="s1-s1-s2-t11" name="Cenario 12" line="60">
+<test id="s1-s1-s1-t11" name="Cadastrar usuário com CEP que não exista" line="61">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:44.958432" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:38:05.526131" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:21:44.958432" elapsed="4.169841"/>
+<status status="PASS" start="2024-12-04T13:38:05.526131" elapsed="3.903072"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:21:49.129281" elapsed="0.237366"/>
+<status status="PASS" start="2024-12-04T13:38:09.429203" elapsed="0.037205"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:49.366647" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:38:09.467409" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:49.366647" elapsed="0.238174"/>
+<status status="PASS" start="2024-12-04T13:38:09.466408" elapsed="0.179887"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:44.958432" elapsed="4.646389"/>
+<status status="PASS" start="2024-12-04T13:38:05.526131" elapsed="4.120164"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:44.957035" elapsed="4.647786"/>
+<status status="PASS" start="2024-12-04T13:38:05.526131" elapsed="4.120164"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário informando um CEP que não exista" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:49.605819" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
+<msg time="2024-12-04T13:38:09.648284" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
 <arg>${input_nome}</arg>
 <arg>${primeiro_nome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:49.605819" elapsed="0.239303"/>
+<status status="PASS" start="2024-12-04T13:38:09.647285" elapsed="0.194592"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:49.846122" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
+<msg time="2024-12-04T13:38:09.843004" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
 <arg>${input_sobrenome}</arg>
 <arg>${sobrenome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:49.845122" elapsed="0.142305"/>
+<status status="PASS" start="2024-12-04T13:38:09.841877" elapsed="0.106194"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:49.990985" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
+<msg time="2024-12-04T13:38:09.948071" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
 <arg>${input_data_nasc}</arg>
 <arg>${data_nasc}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:49.989424" elapsed="0.110153"/>
+<status status="PASS" start="2024-12-04T13:38:09.948071" elapsed="0.082604"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:50.101119" level="INFO">Typing text '63371007006' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
+<msg time="2024-12-04T13:38:10.030675" level="INFO">Typing text '74880662003' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
 <arg>${input_CPF}</arg>
 <arg>${cpf}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:50.100111" elapsed="0.164649"/>
+<status status="PASS" start="2024-12-04T13:38:10.030675" elapsed="0.100247"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:50.265788" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
+<msg time="2024-12-04T13:38:10.130922" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
 <arg>${input_email}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:50.264760" elapsed="0.177726"/>
+<status status="PASS" start="2024-12-04T13:38:10.130922" elapsed="0.129933"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:50.443503" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
+<msg time="2024-12-04T13:38:10.260855" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
 <arg>${input_email_confirm}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:50.443503" elapsed="0.178412"/>
+<status status="PASS" start="2024-12-04T13:38:10.260855" elapsed="0.130081"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:50.622925" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
+<msg time="2024-12-04T13:38:10.393089" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
 <arg>${input_senha}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:50.621915" elapsed="0.123612"/>
+<status status="PASS" start="2024-12-04T13:38:10.392029" elapsed="0.133553"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:50.746483" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
+<msg time="2024-12-04T13:38:10.526388" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
 <arg>${input_senha_confirm}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:50.745527" elapsed="0.126531"/>
+<status status="PASS" start="2024-12-04T13:38:10.525582" elapsed="0.097167"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:50.874317" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
+<msg time="2024-12-04T13:38:10.623883" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
 <arg>${button_proeficiencia}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:50.873271" elapsed="0.084669"/>
+<status status="PASS" start="2024-12-04T13:38:10.623883" elapsed="0.064028"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:50.957940" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
+<msg time="2024-12-04T13:38:10.687911" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
 <arg>${proeficiencia_intermediate}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:50.957940" elapsed="0.105952"/>
+<status status="PASS" start="2024-12-04T13:38:10.687911" elapsed="0.071065"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:51.064915" level="INFO">Clicking element '//input[@id="signup-personal-data-lgpd"]'.</msg>
+<msg time="2024-12-04T13:38:10.758976" level="INFO">Clicking element '//input[@id="signup-personal-data-lgpd"]'.</msg>
 <arg>${button_termos}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:51.064915" elapsed="0.190570"/>
+<status status="PASS" start="2024-12-04T13:38:10.758976" elapsed="0.172854"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:51.256478" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:38:10.931830" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:51.255485" elapsed="0.082474"/>
+<status status="PASS" start="2024-12-04T13:38:10.931830" elapsed="0.066638"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${input_CEP}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:21:51.339584" elapsed="0.029946"/>
+<status status="PASS" start="2024-12-04T13:38:10.998468" elapsed="0.030609"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:51.370538" level="INFO">Typing text '01010144' into text field '//input[@id="signup-address-cep"]'.</msg>
+<msg time="2024-12-04T13:38:11.029077" level="INFO">Typing text '01010144' into text field '//input[@id="signup-address-cep"]'.</msg>
 <arg>${input_CEP}</arg>
 <arg>${cep_n_encontrado}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:51.370538" elapsed="0.105307"/>
+<status status="PASS" start="2024-12-04T13:38:11.029077" elapsed="0.091990"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:49.604821" elapsed="1.871984"/>
+<status status="PASS" start="2024-12-04T13:38:09.647285" elapsed="1.473782"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;CEP não encontrado&quot;" owner="cadastro_exception_steps">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:51.477814" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
+<msg time="2024-12-04T13:38:11.121067" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
 <arg>${button_proximo_tela2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:51.477814" elapsed="0.084257"/>
+<status status="PASS" start="2024-12-04T13:38:11.121067" elapsed="0.068156"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_cep_n_encontrado}</arg>
-<arg>20s</arg>
+<arg>30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:21:51.563071" elapsed="1.864817"/>
+<status status="PASS" start="2024-12-04T13:38:11.189223" elapsed="11.002724"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:51.476805" elapsed="1.951083"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:22.412676" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia12.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:38:22.191947" elapsed="0.220729"/>
 </kw>
-<kw name="E devo ser impedido de seguir com o cadastro na tela 2" owner="settings" type="TEARDOWN">
+<status status="PASS" start="2024-12-04T13:38:11.121067" elapsed="11.291609"/>
+</kw>
+<kw name="E devo ser impedido de seguir com o cadastro na tela 2" owner="settings">
 <kw name="Clicar no botão &quot;Proximo&quot; da tela 2 e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:53.429890" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
+<msg time="2024-12-04T13:38:22.412676" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
 <arg>${button_proximo_tela2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:21:53.429890" elapsed="0.314205"/>
+<status status="PASS" start="2024-12-04T13:38:22.412676" elapsed="0.084538"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:21:56.745338" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:38:25.510449" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:21:53.745102" elapsed="3.000236"/>
+<status status="PASS" start="2024-12-04T13:38:22.507871" elapsed="3.002578"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:21:56.745338" elapsed="2.434689"/>
+<status status="PASS" start="2024-12-04T13:38:25.510449" elapsed="2.247670"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:53.428888" elapsed="5.751139"/>
+<status status="PASS" start="2024-12-04T13:38:22.412676" elapsed="5.345443"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:53.428888" elapsed="5.751139"/>
+<status status="PASS" start="2024-12-04T13:38:22.412676" elapsed="5.345443"/>
 </kw>
-<doc>Cadastrar usuário com CEP que não exista</doc>
-<status status="PASS" start="2024-12-01T14:21:44.957035" elapsed="14.224161"/>
+<doc>Validar se ao cadastrar um usuário com CEP que não exista é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:38:05.526131" elapsed="22.231988"/>
 </test>
-<test id="s1-s1-s2-t12" name="Cenario 13" line="66">
+<test id="s1-s1-s1-t12" name="Cadastrar usuário com CPF já cadastrado" line="68">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:21:59.188292" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:38:27.758119" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:21:59.187305" elapsed="5.621324"/>
+<status status="PASS" start="2024-12-04T13:38:27.758119" elapsed="2.838006"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:22:04.808629" elapsed="0.085059"/>
+<status status="PASS" start="2024-12-04T13:38:30.596125" elapsed="0.043595"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:04.897085" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:38:30.640610" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:04.894694" elapsed="0.297055"/>
+<status status="PASS" start="2024-12-04T13:38:30.639720" elapsed="0.215186"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:59.187305" elapsed="6.004444"/>
+<status status="PASS" start="2024-12-04T13:38:27.758119" elapsed="3.096787"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:21:59.186264" elapsed="6.005485"/>
+<status status="PASS" start="2024-12-04T13:38:27.758119" elapsed="3.096787"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário com um CPF já cadastrado" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:05.196503" level="INFO">Typing text '21012053008' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
+<msg time="2024-12-04T13:38:30.856189" level="INFO">Typing text '25756083090' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
 <arg>${input_CPF}</arg>
 <arg>${cpf_repetido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:05.195307" elapsed="0.265205"/>
+<status status="PASS" start="2024-12-04T13:38:30.856189" elapsed="0.191225"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:05.461521" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:38:31.047414" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:05.461521" elapsed="0.091421"/>
+<status status="PASS" start="2024-12-04T13:38:31.047414" elapsed="0.066679"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:05.195307" elapsed="0.357635"/>
+<status status="PASS" start="2024-12-04T13:38:30.854906" elapsed="0.259187"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Este CPF já está em uso.&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_cpf_repetido}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:22:05.554184" elapsed="1.587060"/>
+<status status="PASS" start="2024-12-04T13:38:31.115111" elapsed="1.564081"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:05.552942" elapsed="1.588302"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:32.898178" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia13.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:38:32.679192" elapsed="0.218986"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:38:31.115111" elapsed="1.783067"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:07.142256" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:38:32.898178" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:07.142256" elapsed="0.134606"/>
+<status status="PASS" start="2024-12-04T13:38:32.898178" elapsed="0.124519"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:22:10.278962" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:38:36.023411" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:22:07.276862" elapsed="3.002100"/>
+<status status="PASS" start="2024-12-04T13:38:33.022697" elapsed="3.000714"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:22:10.278962" elapsed="2.467655"/>
+<status status="PASS" start="2024-12-04T13:38:36.024772" elapsed="2.311995"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:07.142256" elapsed="5.604361"/>
+<status status="PASS" start="2024-12-04T13:38:32.898178" elapsed="5.438589"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:07.142256" elapsed="5.604361"/>
+<status status="PASS" start="2024-12-04T13:38:32.898178" elapsed="5.438589"/>
 </kw>
-<doc>Cadastrar usuário com CPF já cadastrado</doc>
-<status status="PASS" start="2024-12-01T14:21:59.185215" elapsed="13.562371"/>
+<doc>Validar se ao cadastrar um usuário com CPF já cadastrado é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:38:27.758119" elapsed="10.578648"/>
 </test>
-<test id="s1-s1-s2-t13" name="Cenario 14" line="71">
+<test id="s1-s1-s1-t13" name="Cadastrar usuário com email já cadastrado" line="73">
 <kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
 <kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:12.752273" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<msg time="2024-12-04T13:38:38.336767" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:22:12.752273" elapsed="3.999253"/>
+<status status="PASS" start="2024-12-04T13:38:38.336767" elapsed="3.584536"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:22:16.752526" elapsed="0.097449"/>
+<status status="PASS" start="2024-12-04T13:38:41.921303" elapsed="0.033997"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:16.852997" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<msg time="2024-12-04T13:38:41.955300" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
 <arg>${button_init}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:16.850983" elapsed="0.309314"/>
+<status status="PASS" start="2024-12-04T13:38:41.955300" elapsed="0.228584"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:12.750767" elapsed="4.410036"/>
+<status status="PASS" start="2024-12-04T13:38:38.336767" elapsed="3.847117"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:12.750767" elapsed="4.410036"/>
+<status status="PASS" start="2024-12-04T13:38:38.336767" elapsed="3.847117"/>
 </kw>
 <kw name="Quando eu tento cadastrar um usuário com um email já cadastrado" owner="cadastro_exception_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:17.161812" level="INFO">Typing text 'thipereira.isilva@gmail.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
+<msg time="2024-12-04T13:38:42.184882" level="INFO">Typing text 'thipereira.isilva@gmail.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
 <arg>${input_email}</arg>
 <arg>${email_repetido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:17.160803" elapsed="0.266765"/>
+<status status="PASS" start="2024-12-04T13:38:42.184882" elapsed="0.236049"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:17.430124" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:38:42.420931" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:17.428590" elapsed="0.099622"/>
+<status status="PASS" start="2024-12-04T13:38:42.420931" elapsed="0.067971"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:17.160803" elapsed="0.367409"/>
+<status status="PASS" start="2024-12-04T13:38:42.184882" elapsed="0.304020"/>
 </kw>
 <kw name="Então deve ser retornada a mensagem &quot;Este email já está em uso.&quot;" owner="cadastro_exception_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${span_email_repetido}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:22:17.529719" elapsed="1.431915"/>
+<status status="PASS" start="2024-12-04T13:38:42.490728" elapsed="1.085309"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:17.528212" elapsed="1.433422"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:43.804651" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia14.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:38:43.576037" elapsed="0.228614"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:38:42.489901" elapsed="1.314750"/>
 </kw>
 <kw name="E devo ser impedido de seguir com o cadastro" owner="settings" type="TEARDOWN">
 <kw name="Clicar no botão &quot;Proximo&quot; e fechar navegador" owner="settings">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:18.976883" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<msg time="2024-12-04T13:38:43.814056" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
 <arg>${button_proximo}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:18.976883" elapsed="0.453495"/>
+<status status="PASS" start="2024-12-04T13:38:43.814056" elapsed="0.132995"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-01T14:22:22.430903" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-12-04T13:38:46.947810" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-01T14:22:19.430378" elapsed="3.000525"/>
+<status status="PASS" start="2024-12-04T13:38:43.947051" elapsed="3.000759"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:22:22.430903" elapsed="2.434035"/>
+<status status="PASS" start="2024-12-04T13:38:46.947810" elapsed="2.213531"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:18.975882" elapsed="5.889964"/>
+<status status="PASS" start="2024-12-04T13:38:43.804651" elapsed="5.356690"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:18.975882" elapsed="5.889964"/>
+<status status="PASS" start="2024-12-04T13:38:43.804651" elapsed="5.356690"/>
 </kw>
-<doc>Cadastrar usuário com email já cadastrado</doc>
-<status status="PASS" start="2024-12-01T14:22:12.750767" elapsed="12.115592"/>
+<doc>Validar se ao cadastrar um usuário com email já cadastrado é apresentada uma mensagem amigável</doc>
+<status status="PASS" start="2024-12-04T13:38:38.336767" elapsed="10.824574"/>
 </test>
-<status status="PASS" start="2024-12-01T14:19:41.464461" elapsed="163.405226"/>
+<status status="PASS" start="2024-12-04T13:36:24.424512" elapsed="144.736829"/>
 </suite>
-<status status="PASS" start="2024-12-01T14:19:23.334633" elapsed="181.538494"/>
-</suite>
-<suite id="s1-s2" name="Login" source="C:\Projetos Th\Projeto automação\English Pass\Test\Login">
-<suite id="s1-s2-s1" name="TC Login de usuario e2e" source="C:\Projetos Th\Projeto automação\English Pass\Test\Login\TC Login de usuario e2e.robot">
-<test id="s1-s2-s1-t1" name="Cenario 15" line="8">
-<kw name="Dado que acesso o site English pass para login" owner="login_steps">
+<suite id="s1-s1-s2" name="TC02 - Cadastro de usuario e2e" source="C:\Projetos Th\Projeto automação\English Pass\Test\Cadastro\TC02 - Cadastro de usuario e2e.robot">
+<test id="s1-s1-s2-t1" name="Cadastrar usuário no site English Pass" line="9">
+<kw name="Dado que acesso o site English Pass para realizar o cadastro" owner="settings" type="SETUP">
+<kw name="Acessar Site" owner="settings">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:24.931647" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/'.</msg>
-<arg>${url_login}</arg>
+<msg time="2024-12-04T13:38:49.245165" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/18/cadastro/'.</msg>
+<arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-01T14:22:24.931647" elapsed="4.497127"/>
+<status status="PASS" start="2024-12-04T13:38:49.245165" elapsed="2.618165"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-01T14:22:29.429774" elapsed="0.848673"/>
+<status status="PASS" start="2024-12-04T13:38:51.878998" elapsed="0.769860"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:24.931647" elapsed="5.346800"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:52.649828" level="INFO">Clicking button '//button[@id="btn-enroll"]'.</msg>
+<arg>${button_init}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:52.648858" elapsed="0.185021"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:38:49.245165" elapsed="3.588714"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:38:49.244165" elapsed="3.589714"/>
+</kw>
+<kw name="Quando eu preencho todos os campos corretamente" owner="cadastro_steps">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:52.834878" level="INFO">Typing text 'Thiago' into text field '//input[@id="signup-personal-data-firstName"]'.</msg>
+<arg>${input_nome}</arg>
+<arg>${primeiro_nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:52.834878" elapsed="0.165697"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.000575" level="INFO">Typing text 'Silva' into text field '//input[@id="signup-personal-data-lastName"]'.</msg>
+<arg>${input_sobrenome}</arg>
+<arg>${sobrenome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.000575" elapsed="0.075464"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.076039" level="INFO">Typing text '24022001' into text field '//input[@id="signup-personal-data-birthDate"]'.</msg>
+<arg>${input_data_nasc}</arg>
+<arg>${data_nasc}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.076039" elapsed="0.073262"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.149301" level="INFO">Typing text '74880662003' into text field '//input[@id="signup-personal-data-cpf"]'.</msg>
+<arg>${input_CPF}</arg>
+<arg>${cpf}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.149301" elapsed="0.089258"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.242033" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email"]'.</msg>
+<arg>${input_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.242033" elapsed="0.100858"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.342891" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="signup-personal-data-email-confirm"]'.</msg>
+<arg>${input_email_confirm}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.342891" elapsed="0.106927"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.449818" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password"]'.</msg>
+<arg>${input_senha}</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.449818" elapsed="0.091226"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.541044" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="signup-personal-data-password-confirm"]'.</msg>
+<arg>${input_senha_confirm}</arg>
+<arg>${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.541044" elapsed="0.082894"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${button_proeficiencia}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.623938" elapsed="0.286567"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button_proeficiencia}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.910505" elapsed="0.017277"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.927782" level="INFO">Clicking element '//button[@x-ref="button" and @type="button" and .//span[contains(text(), 'Selecione a proficiência')]]'.</msg>
+<arg>${button_proeficiencia}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.927782" elapsed="0.071034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:53.998816" level="INFO">Clicking element '//span[text()="Intermediate" and @x-text="option.value"]'.</msg>
+<arg>${proeficiencia_intermediate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:53.998816" elapsed="0.112560"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:54.112375" level="INFO">Clicking element '//input[@id="signup-personal-data-lgpd"]'.</msg>
+<arg>${button_termos}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:54.112375" elapsed="0.164019"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:54.276394" level="INFO">Clicking element '//button[@id="signup_submit_button_1"]'.</msg>
+<arg>${button_proximo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:54.276394" elapsed="0.086261"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:54.362655" level="INFO">Typing text '68903615' into text field '//input[@id="signup-address-cep"]'.</msg>
+<arg>${input_CEP}</arg>
+<arg>${cep}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:54.362655" elapsed="0.087512"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:54.450167" level="INFO">Typing text '3' into text field '//input[@id="signup-address-number"]'.</msg>
+<arg>${input_numero}</arg>
+<arg>${numero}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:54.450167" elapsed="0.102367"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:38:58.554018" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:38:54.552534" elapsed="4.001484"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:38:52.834878" elapsed="5.719140"/>
+</kw>
+<kw name="E clico no botão &quot;Fazer inscrição&quot;" owner="cadastro_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:38:58.556995" level="INFO">Clicking element '//button[@id="signup_submit_button_3"]'.</msg>
+<arg>${button_proximo_tela2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-04T13:38:58.556000" elapsed="0.109743"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-04T13:39:02.666084" level="INFO">Slept 4 seconds.</msg>
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-04T13:38:58.665743" elapsed="4.000341"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:38:58.556000" elapsed="4.110084"/>
+</kw>
+<kw name="Então o usuário deve ser cadastrado com sucesso" owner="cadastro_steps">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:39:02.691684" level="INFO">Element '//button[@id="wide_window_button"]' is displayed.</msg>
+<arg>${tela_de_verificao}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-04T13:39:02.666084" elapsed="0.026546"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:39:03.188988" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia15.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:39:02.692630" elapsed="0.496358"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:39:02.666084" elapsed="0.522904"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-04T13:39:03.191073" elapsed="2.283538"/>
+</kw>
+<doc>Validar se é possível cadastrar um usuário no site English Pass</doc>
+<status status="PASS" start="2024-12-04T13:38:49.243165" elapsed="16.232418"/>
+</test>
+<status status="PASS" start="2024-12-04T13:38:49.161341" elapsed="16.317256"/>
+</suite>
+<status status="PASS" start="2024-12-04T13:36:24.415002" elapsed="161.066596"/>
+</suite>
+<suite id="s1-s2" name="Login" source="C:\Projetos Th\Projeto automação\English Pass\Test\Login">
+<suite id="s1-s2-s1" name="TC01 -  Login de usuario e2e" source="C:\Projetos Th\Projeto automação\English Pass\Test\Login\TC01 -  Login de usuario e2e.robot">
+<test id="s1-s2-s1-t1" name="Realizando o login e logout" line="8">
+<kw name="Dado que acesso o site English pass para login" owner="login_steps">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:39:05.518223" level="INFO">Opening browser 'gc' to base url 'https://qastage.buildbox.one/'.</msg>
+<arg>${url_login}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-04T13:39:05.518223" elapsed="4.186165"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-04T13:39:09.704388" elapsed="0.081019"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:39:05.518223" elapsed="4.267184"/>
 </kw>
 <kw name="Quando eu realizo o login com esse usuário cadastrado" owner="login_steps">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:30.281481" level="INFO">Typing text 'thipereira.santos@yahoo.com' into text field '//input[@id="user_login" and @name="log"]'.</msg>
+<msg time="2024-12-04T13:39:09.787716" level="INFO">Typing text 'thipereira.aielo@gmail.com' into text field '//input[@id="user_login" and @name="log"]'.</msg>
 <arg>${input_login}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:30.280463" elapsed="0.433069"/>
+<status status="PASS" start="2024-12-04T13:39:09.786417" elapsed="0.329094"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:30.713532" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="user_pass" and @name="pwd"]'.</msg>
+<msg time="2024-12-04T13:39:10.115511" level="INFO">Typing text 'Senha1234@' into text field '//input[@id="user_pass" and @name="pwd"]'.</msg>
 <arg>${input_password}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:30.713532" elapsed="0.119104"/>
+<status status="PASS" start="2024-12-04T13:39:10.115511" elapsed="0.119457"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:30.833635" level="INFO">Clicking element '//input[@id="wp-submit" and @name="wp-submit"]'.</msg>
+<msg time="2024-12-04T13:39:10.234968" level="INFO">Clicking element '//input[@id="wp-submit" and @name="wp-submit"]'.</msg>
 <arg>${input_sing_in}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:30.832636" elapsed="2.247908"/>
+<status status="PASS" start="2024-12-04T13:39:10.234968" elapsed="2.023373"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:30.280463" elapsed="2.800081"/>
+<status status="PASS" start="2024-12-04T13:39:09.786417" elapsed="2.471924"/>
 </kw>
 <kw name="Então o login deve ser realizado com sucesso" owner="login_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${a_estudar}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:22:33.080544" elapsed="0.039764"/>
+<status status="PASS" start="2024-12-04T13:39:12.258341" elapsed="0.028405"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:33.080544" elapsed="0.039764"/>
+<status status="PASS" start="2024-12-04T13:39:12.258341" elapsed="0.029688"/>
 </kw>
 <kw name="E faço o logout" owner="login_steps">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${a_logout}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-01T14:22:33.120308" elapsed="0.034720"/>
+<status status="PASS" start="2024-12-04T13:39:12.288029" elapsed="0.024760"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-01T14:22:33.156333" level="INFO">Clicking element '//span[@x-show="!isCollapsed" and text()=" Logout "]'.</msg>
+<msg time="2024-12-04T13:39:12.312789" level="INFO">Clicking element '//span[@x-show="!isCollapsed" and text()=" Logout "]'.</msg>
 <arg>${a_logout}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-01T14:22:33.155028" elapsed="1.172286"/>
+<status status="PASS" start="2024-12-04T13:39:12.312789" elapsed="1.102259"/>
 </kw>
-<status status="PASS" start="2024-12-01T14:22:33.120308" elapsed="1.207006"/>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-12-04T13:39:13.841219" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia16.png"&gt;&lt;img src="English%20Pass/Results/Photos%20evidence/Evid%C3%AAncia16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>English Pass/Results/Photos evidence/Evidência{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-12-04T13:39:13.416091" elapsed="0.426171"/>
+</kw>
+<status status="PASS" start="2024-12-04T13:39:12.288029" elapsed="1.554233"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-12-01T14:22:34.331392" elapsed="2.594170"/>
+<status status="PASS" start="2024-12-04T13:39:13.842262" elapsed="2.210670"/>
 </kw>
-<doc>Realizando o login e logout</doc>
-<status status="PASS" start="2024-12-01T14:22:24.930622" elapsed="11.994940"/>
+<doc>Validar se é possóvel realizar login e logout com usuário já cadastrado</doc>
+<status status="PASS" start="2024-12-04T13:39:05.517223" elapsed="10.535709"/>
 </test>
-<status status="PASS" start="2024-12-01T14:22:24.892886" elapsed="12.033677"/>
+<status status="PASS" start="2024-12-04T13:39:05.492062" elapsed="10.560870"/>
 </suite>
-<status status="PASS" start="2024-12-01T14:22:24.875027" elapsed="12.053537"/>
+<status status="PASS" start="2024-12-04T13:39:05.484598" elapsed="10.568334"/>
 </suite>
-<status status="PASS" start="2024-12-01T14:19:23.303671" elapsed="193.625895"/>
+<status status="PASS" start="2024-12-04T13:36:24.401911" elapsed="171.651021"/>
 </suite>
 <statistics>
 <total>
@@ -1439,10 +1542,10 @@
 <suite>
 <stat pass="15" fail="0" skip="0" id="s1" name="Test">Test</stat>
 <stat pass="14" fail="0" skip="0" id="s1-s1" name="Cadastro">Test.Cadastro</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC - Cadastro de usuario e2e">Test.Cadastro.TC - Cadastro de usuario e2e</stat>
-<stat pass="13" fail="0" skip="0" id="s1-s1-s2" name="TC - Cadastro de usuario exception">Test.Cadastro.TC - Cadastro de usuario exception</stat>
+<stat pass="13" fail="0" skip="0" id="s1-s1-s1" name="TC01 - Cadastro de usuario exception">Test.Cadastro.TC01 - Cadastro de usuario exception</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2" name="TC02 - Cadastro de usuario e2e">Test.Cadastro.TC02 - Cadastro de usuario e2e</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s2" name="Login">Test.Login</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s2-s1" name="TC Login de usuario e2e">Test.Login.TC Login de usuario e2e</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2-s1" name="TC01 -  Login de usuario e2e">Test.Login.TC01 -  Login de usuario e2e</stat>
 </suite>
 </statistics>
 <errors>
