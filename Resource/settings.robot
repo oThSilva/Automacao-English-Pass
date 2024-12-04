@@ -1,6 +1,8 @@
 *** Settings ***
-Library  SeleniumLibrary
 Resource    ../Elements/main_elements.robot
+Library  SeleniumLibrary
+Library    Process
+Library    OperatingSystem
 
 *** Variables ***
 #Dados gerais
@@ -36,9 +38,8 @@ Clicar no botão "Proximo" da tela 2 e fechar navegador
     Sleep    3s
     Close Browser
 
-
-
-
+Script para gerar evidência
+    Run Process    python    English Pass/Resource/Scripts/gerar_relatorio.py
 
 
 

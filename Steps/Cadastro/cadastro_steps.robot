@@ -39,6 +39,9 @@ E clico no botão "Fazer inscrição"
     Sleep    4s
 Então o usuário deve ser cadastrado com sucesso
     Element Should Be Visible        ${tela_de_verificao}
+    
+    Capture Page Screenshot    English Pass/Results/Photos evidence/Evidência{index}.png
+                               
 
 
 
